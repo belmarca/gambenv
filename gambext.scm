@@ -284,7 +284,3 @@
      ((equal? "remove" (car args))
       (remove-gambit-version (cadr args)))
      (else (select-gambit-version (car args))))))
-
-
-;; TODO
-;; rajouter détection de --enable-shared et modification du rpath
