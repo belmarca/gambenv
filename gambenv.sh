@@ -2,7 +2,7 @@
 
 # gambenv.sh
 #
-# (c) 2023 - Marc-André Bélanger
+# (c) 2023 - 2025 Marc-André Bélanger
 #
 # This shell script is only intended to set up a Gambit environment.
 # It should be invoked once, from this directory.
@@ -11,7 +11,7 @@
 ## Config
 
 GB_VERSION=v0.0.2
-GB_GAMBIT_VERSION=v4.9.5                                # Follow latest Gambit release
+GB_GAMBIT_VERSION=v4.9.6                                # Follow latest Gambit release
 GB_GAMBIT_VERSION_ALIAS="${GB_GAMBIT_VERSION}"          # Same as latest release
 
 GB_DOTGB="${GB_DOTGB:-$HOME/.gambit_env}"               # Override if you wish.
@@ -213,6 +213,7 @@ write_gambenv_config() {
     log "Done."
 }
 
+# TODO: is current/bin required?
 goodbye() {
     success
     success "A Gambit environment has been successfully set up! Remember to add"
