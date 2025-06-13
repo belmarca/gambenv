@@ -1,4 +1,4 @@
-# gambenv - Gambit Scheme quick setup and version manager
+# gambenv
 
 This repository contains script to organize, manage and isolate Gambit Scheme
 compiler versions. We take inspiration from Python's `venv` module and
