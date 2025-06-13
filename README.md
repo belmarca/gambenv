@@ -52,3 +52,12 @@ versions in Docker. The `Makefile` contains recipes to do that. The
 `simple-builder.sh` file has some utilities to facilitate this process. The
 build matrix is currently hardcoded. It will eventually be much easier to define
 new `configure` flags, `CC` versions, etc.
+
+## TODO
+
+- Update mechanism for the default Gambit Scheme installation
+- `git pull` when creating a new environment to make sure we get recent sources
+and all available tags?
+- Re-write the environment management logic as a Gambit Scheme module and keep
+`gambit.sh` very lightweight. The `gambit.sh` script is actually a shell
+re-write of an earlier Scheme script.
